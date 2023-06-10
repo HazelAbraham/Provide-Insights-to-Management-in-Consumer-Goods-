@@ -19,4 +19,46 @@ Imagine yourself as the applicant for this role and perform the following task
 #### Ad-hoc Request Questions 
 _____________________________________________________________________________________________________________________________________________________
 
+### 1. Provide the list of markets in which customer "Atliq Exclusive" operates its business in the APAC region.
+``` 
+SELECT  DISTINCT MARKET FROM dim_customer
+WHERE CUSTOMER="Atliq Exclusive" and  region="APAC";
+```
+![alt text](https://github.com/HazelAbraham/Provide-Insights-to-Management-in-Consumer-Goods-/blob/main/Q1%20SOL.png)
+
+
+#### 2. What is the percentage of unique product increase in 2021 vs. 2020? The final output contains these fields, unique_products_2020 unique_products_2021 percentage_chg?
+```
+select *from fact_sales_monthly
+SELECT X.B AS unique_product_2020, Y.A as unique_product_2021 , Round((A-B)*100/B, 2) AS percentage_change
+FROM(
+(SELECT COUNT(DISTINCT(PRODUCT_CODE)) AS B FROM  FACT_SALES_MONTHLY
+WHERE FISCAL_YEAR="2020")X,
+(SELECT COUNT(DISTINCT(PRODUCT_CODE)) AS A FROM  FACT_SALES_MONTHLY
+WHERE FISCAL_YEAR="2021" )Y
+)
+```
+![alt text](https://github.com/HazelAbraham/Provide-Insights-to-Management-in-Consumer-Goods-/blob/main/SOL%202.png)
+
+
+#### 3. Provide a report with all the unique product counts for each segment  and sort them in descending order of product counts. The final output contains 2 fields,segment ,product_count
+```
+SELECT  segment , COUNT(DISTINCT PRODUCT_CODE) as product_count 
+FROM dim_product
+group by segment
+order by product_count desc;
+```
+![alt text](https://github.com/HazelAbraham/Provide-Insights-to-Management-in-Consumer-Goods-/blob/main/SOL%203%20FINAL%20.png)
+
+#### 4.
+
+
+
+
+
+#### 5
+
+
+
+
 
