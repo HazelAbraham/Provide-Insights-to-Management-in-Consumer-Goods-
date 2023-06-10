@@ -15,3 +15,8 @@ Imagine yourself as the applicant for this role and perform the following task
 
 # Tools : MySQL , Domain Knowledge
 
+
+#### Ad-hoc Request Questions 
+_____________________________________________________________________________________________________________________________________________________
+
+
