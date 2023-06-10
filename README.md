@@ -169,3 +169,8 @@ WHERE rank_order IN (1,2,3);
 ```
 
 ![alt text](https://github.com/HazelAbraham/Provide-Insights-to-Management-in-Consumer-Goods-/blob/main/q10%20sol.png)
+
+## Conclusion:
+1.	 The "Retailer" channel recorded the highest sales, contributing 73.22% to the overall amount sold.
+2.	 In contrast, the "Distributor" channel exhibited the lowest contribution at 11.31%.
+3.	 These insights reveal essential metrics like Gross Profit, Average Gross Sales, and Average Manufacturing Cost, emphasizing the pivotal role of the           "Retailer" channel in driving Atliq Hardwares' sales.
